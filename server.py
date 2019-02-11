@@ -6,9 +6,9 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def hello_world():
-   return "<h1>Welcome bitches to the world of suckers</h1><br><h2>/mdd?hash=for-md5-hash</h2>"
+   return "<h1>Welcome to the api for decrypting md5 hashes</h1><br><h2>/md5?hash=for-md5-hash</h2><br>Made with ❤<br/> By Sarthak Saini"
 
-@app.route('/mdd', methods=['GET'])
+@app.route('/md5', methods=['GET'])
 def md():
     user = flask.request.args.get('hash')
     if user:
@@ -26,4 +26,4 @@ def mda():
 
 
 if __name__ == '__main__':
-   app.run()
+   app.run(host="0.0.0.0",port=80)
