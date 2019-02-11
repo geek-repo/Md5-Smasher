@@ -6,7 +6,7 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def hello_world():
-   return "<h1>Welcome to the api for decrypting md5 hashes</h1><br><h2>/md5?hash=for-md5-hash</h2><br>Made with ❤<br/> By Sarthak Saini"
+   return "<h1>Welcome to the api for decrypting md5 hashes</h1><br><h2>/md5?hash=putmd5here</h2><br>Made with ❤<br/> By Sarthak Saini"
 
 @app.route('/md5', methods=['GET'])
 def md():
